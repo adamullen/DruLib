@@ -1,4 +1,7 @@
 steps:
+  - name: Test Connection
+    plugin: Shell
+    command: 'print "Hello World!"'
   - name: install drupal6
     plugin: Drupal
     runInstall: true
