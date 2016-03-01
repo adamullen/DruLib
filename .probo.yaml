@@ -1,5 +1,5 @@
 steps:
-  - name: install drupal6
+  - name: install drupal
     plugin: Drupal
     runInstall: true
     profileName: standard
