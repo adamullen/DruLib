@@ -1,0 +1,8 @@
+steps:
+  - name: install drupal
+    plugin: Drupal
+    runInstall: true
+    profileName: standard
+    clearCaches: false
+  - name: change file perms
+    command: "chown www-data /var/www/html/sites/default/settings.php ; chown -R www-data /var/www/html/sites/default/files "
